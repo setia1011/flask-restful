@@ -1,7 +1,7 @@
 # flask-restful
 A simple restful api with Flask
 
-##Intalation
+## Installation
 <br>
-<b>1. Create virtual environment (virtualenv)</b>
+<b>1. Create virtual environment (virtualenv)</b><br>
 <b>2. Install all required libraries in requirements.txt</b>
