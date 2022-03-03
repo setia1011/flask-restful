@@ -12,6 +12,7 @@ from app.routes.user import user_routes
 from app.routes.book import book_routes
 from app.routes.author import author_routes
 from app.routes.analytics import analytics_routes
+from app.routes.google_trends import google_trends_routes
 from app.utils import responses as resp
 from app.utils.mail import mail
 
@@ -71,6 +72,7 @@ app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(book_routes, url_prefix='/api/books')
 app.register_blueprint(author_routes, url_prefix='/api/authors')
 app.register_blueprint(analytics_routes, url_prefix='/api/analytics')
+app.register_blueprint(google_trends_routes, url_prefix='/api/google-trends')
 
 if __name__ == "__main__":
    app.run()
