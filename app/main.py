@@ -68,11 +68,11 @@ jwt = JWTManager(app)
 # Routing
 app.register_blueprint(cmd)
 app.register_blueprint(home_routes, url_prefix='/')
-app.register_blueprint(user_routes, url_prefix='/api/users')
-app.register_blueprint(book_routes, url_prefix='/api/books')
-app.register_blueprint(author_routes, url_prefix='/api/authors')
-app.register_blueprint(analytics_routes, url_prefix='/api/analytics')
-app.register_blueprint(google_trends_routes, url_prefix='/api/google-trends')
+app.register_blueprint(user_routes, url_prefix='/v1/users')
+app.register_blueprint(book_routes, url_prefix='/v1/books')
+app.register_blueprint(author_routes, url_prefix='/v1/authors')
+app.register_blueprint(analytics_routes, url_prefix='/v1/analytics')
+app.register_blueprint(google_trends_routes, url_prefix='/v1/youtube-trends')
 
 if __name__ == "__main__":
    app.run()

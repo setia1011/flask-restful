@@ -1,5 +1,4 @@
 import numpy as np
-
 from flask import Blueprint, jsonify
 from app.utils.responses import response_with
 from app.utils import responses as resp
@@ -41,7 +40,7 @@ def index():
     return response_with(resp.SUCCESS_200, value={"data": 'YouTube API'})
 
 
-@google_trends_routes.route("/youtube", methods=['GET'], endpoint='youtube')
+@google_trends_routes.route("/interset-over-time", methods=['GET'], endpoint='interset-over-time')
 def trends():
     keywords = ['python', 'php']
     timeframe = timeframes[3]
